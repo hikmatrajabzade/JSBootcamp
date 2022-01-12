@@ -55,7 +55,7 @@ console.log(cars);
 cars.splice(cars.length - 2, cars.length - 1);
 console.log(cars);
 
-// 3 massivden ibaret olan massiv yarat /
+// 3 massivden ibaret olan massiv yarat 
 
 var studentA = ["Hikmet", "XNUVD", 1999];
 var studentB = ["Turkan", "BDU", 2000];
