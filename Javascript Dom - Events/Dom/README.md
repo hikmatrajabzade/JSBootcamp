@@ -1,0 +1,24 @@
+What i learned:
+
+createElement
+createTextNode
+appendChild
+setAttribute
+getAttribute
+
+childNodes
+nodeName
+nodeType
+children
+firstChild
+lastElementChild
+childElementCount
+parentElement
+nextElementSibling
+
+remove
+removeChild
+removeAttribute
+replaceChild
+className
+classList
