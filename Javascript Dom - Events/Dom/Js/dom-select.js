@@ -37,17 +37,17 @@ document.querySelector('li').classList.add("sa");
 
 // cox element secme getElementsByClassName - for
 
-// let ran = document.getElementsByTagName('li');
-// console.log(ran);
+let ran = document.getElementsByTagName('li');
+console.log(ran);
 
-// for (let i = 0; i < ran.length; i++) {
-//     console.log(ran[i].style.color = "black");
-// }
+for (let i = 0; i < ran.length; i++) {
+    console.log(ran[i].style.color = "black");
+}
 
 // cox element secme querySelectorAll - Foreach, for
 
 
-// let ran = document.querySelectorAll('li');
-// ran.forEach(function(item1) {
-//     console.log(item1);
-// })
+let ran = document.querySelectorAll('li');
+ran.forEach(function(item1) {
+    console.log(item1);
+})
