@@ -1,3 +1,5 @@
+// query selecetors
+
 const addTaskForm = document.querySelector('#addTaskForm');
 const txtTaskName = document.querySelector('#txtTaskName');
 const taskList = document.querySelector('#task-list');
