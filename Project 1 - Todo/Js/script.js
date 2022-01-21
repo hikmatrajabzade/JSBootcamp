@@ -1,5 +1,16 @@
-// query selecetors
+// var a = ['hikmet', 'rajabli'];
+// console.log(a);
 
+// a.forEach(function(item, index) {
+
+//     a.splice(index, 1);
+
+
+//     console.log(item);
+
+// })
+
+// query selecetors
 const addTaskForm = document.querySelector('#addTaskForm');
 const txtTaskName = document.querySelector('#txtTaskName');
 const taskList = document.querySelector('#task-list');
@@ -78,12 +89,25 @@ function addNewItem(event) {
 
 }
 
+// delete from local storage
+
+function deleteFromLS(text) {
+    items = getLS();
+    items.forEach(function(item, index) {
+        if (item === text) {
+            items.splice(index);
+        }
+    });
+    localStorage.setItem('items', JSON.stringify(items));
+}
+
 // delete in item 
 function deleteItem(event) {
     event.preventDefault();
     if (event.target.className === 'fas fa-times') {
         if (confirm('are you sure?')) {
             (event.target.parentElement.parentElement.remove());
+            deleteFromLS(event.target.parentElement.parentElement.textContent);
         }
     }
 }
